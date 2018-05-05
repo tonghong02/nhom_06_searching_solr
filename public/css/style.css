@@ -35,7 +35,7 @@ form>input{
 	margin-bottom: 15px;
 }
 .search_results {
-	width: 76%;
+	width: 70%;
 	max-width: 1200px;
 	margin: 0 auto;
 	border-radius: 5px;
@@ -66,4 +66,9 @@ h2:hover {
 	margin-left: 12%;
 	margin-bottom: 2%;
 }
-
+.qtime{    
+	padding-left: 15%;
+}
+.paginationn{
+	margin-left: 3.5%;
+}

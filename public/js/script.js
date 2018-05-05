@@ -44,7 +44,7 @@ $(function () {
           console.log(highLight);
           console.log("result docs")
           console.log(results);
-          $(".qtime").text("Khoảng " + totalResults + " kết quả (" + qtime + " ms)");
+          $(".qtime").text("Khoảng " + totalResults + " kết quả (" + qtime/1000 + " s)");
           $('#pagination-demo').twbsPagination('destroy');
           $('#pagination-demo').twbsPagination({
             startPage: 1,
