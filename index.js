@@ -16,6 +16,10 @@ app.get('/nhom06', (req, res) => {
     res.render('index.ejs')
 })
 
+app.get('/', (req, res) => {
+    res.render('index.ejs')
+})
+
 
 app.listen(port);
 console.log('The server listen on port ' + port);

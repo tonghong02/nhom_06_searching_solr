@@ -1,7 +1,7 @@
 $(function () {
   var titles = [];
   $.ajax({
-    url: "http://localhost:8983/solr/Nhom_06/select?wt=json&json.wrf=?&indent=true&start=0&rows=1000&fl=title&q=*:*",
+    url: "http://localhost:8983/solr/nhom_05/select?wt=json&json.wrf=?&indent=true&start=0&rows=1000&fl=title&q=*:*",
     dataType: 'jsonp',
     success: function (data) {
       let docs = data.response.docs;
