@@ -1,7 +1,8 @@
 $(function () {
   var titles = [];
   $.ajax({
-    url: "http://localhost:8983/solr/nhom_05/select?wt=json&json.wrf=?&indent=true&start=0&rows=1000&fl=title&q=*:*",
+    // url: "http://localhost:8983/solr/nhom_05/select?wt=json&json.wrf=?&indent=true&start=0&rows=1000&fl=title&q=*:*",
+    url: "https://localhost:8983/solr/nhom_05/select?wt=json&json.wrf=?&indent=true&start=0&rows=1000&fl=title&q=*:*",
     dataType: 'jsonp',
     success: function (data) {
       let docs = data.response.docs;
@@ -27,8 +28,8 @@ $(function () {
     $('.search_results').empty();
     var user_input = $('.search input[type=search]').val().trim();
     console.log("input = " + user_input);
-    var wiki_api = "http://localhost:8983/solr/Nhom_06/select?hl=true&hl.fl=content&hl.usePhraseHighlighter=true&wt=json&json.wrf=?&indent=true&start=0&rows=650&q=content:" + user_input
-
+    // var wiki_api = "http://localhost:8983/solr/Nhom_06/select?hl=true&hl.fl=content&hl.usePhraseHighlighter=true&wt=json&json.wrf=?&indent=true&start=0&rows=650&q=content:" + user_input
+    var wiki_api = "https://localhost:8983/solr/Nhom_06/select?hl=true&hl.fl=content&hl.usePhraseHighlighter=true&wt=json&json.wrf=?&indent=true&start=0&rows=650&q=content:" + user_input
     if (user_input !== "") {
       $.ajax({
         url: wiki_api,
