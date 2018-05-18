@@ -12,8 +12,8 @@ app.use(bodyParser.json());
 
 app.set('view engine', 'ejs'); // set up ejs for templating
 
-app.get('/nhom06', (req, res) => {
-    res.render('index.ejs')
+app.get('/university', (req, res) => {
+    res.render('university.ejs')
 })
 
 app.get('/', (req, res) => {
@@ -21,5 +21,7 @@ app.get('/', (req, res) => {
 })
 
 
-app.listen(port);
-console.log('The server listen on port ' + port);
+app.listen(port, () => {
+    console.log('The server listen on port ' + port);
+});
+
